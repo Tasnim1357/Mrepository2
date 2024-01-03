@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar section starts */
+
+nav{
+    background-image: radial-gradient(#92b0cf,#708090,#2F4F4F);
+   
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 30px;
+}
+.nav li a{
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s;
+    padding: 30px 30px;
+    
+}
+.nav li a:hover , .nav li a.active{
+    background-color: #c2d7ee;
+    color: #2F4F4F;
+}
+#bar{
+    color: black;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+    
+   
+}
+
+/* Navbar section ends */
+/* Hero section starts */
+.hero{
+    padding: 5% 8%;
+}
+ .hero-wrapper{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+.detail{
+    width: 50%;
+}
+.hd1{
+    margin:30px 0;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+
+}
+.hd2{
+    color: orange;
+}
+.detail p{
+    text-align: justify;
+    font-size: 18px;
+}
+.detail button{
+    color: white;
+    background-image: radial-gradient(#2e91f4,#0f71d3,#101691);
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-size: 19px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 30px 0;
+    transition: all 0.6s;
+}
+.detail button:hover{
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4);
+    filter: brightness(0.8);
+}
+
+/* Hero section ends */
+
+/* About section starts */
+
+.about{
+    padding: 5% 8%;
+    background-color: rgb(246, 220, 198);
+}
+ .about-wrapper{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+.detail .hd1{
+    margin-top: 5px;
+}
+
+.detail .btn{
+    background-image: radial-gradient(#ee8ec3,#ff75c1,#ff1e96);
+}
+
+/* About section ends */
+
+/* recipe section starts */
+
+.recipes{
+    padding: 5% 8%;
+}
+.recipes-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+   
+   
+}
+.recipes-wrapper .card1{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 20px;
+    margin-top: 10%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    
+}
+
+.recde .hd1{
+    text-align: center;
+}
+.recde p{
+    text-align: center;
+}
+.image2{
+    height: 300px;
+    border-radius: 12px;
+  
+}
+.det1{
+    margin-top: 5%;
+    height: 50%;
+    padding-bottom: 20px;
+}
+.info-card{
+    display: flex;
+    justify-content: space-around;
+    margin: 8% 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 8% 8%;
+    border-radius: 15px;
+    width: 100%;
+
+}
+.info-card .dv1 h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.info-card .dv1 p{
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    color: #708090;
+}
+/* Recipes ends */
+/* Footer section starts */
+
+.footer{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #2F4F4F;
+   margin-top:-80px;
+   color: white;
+}
+
+
+@media (max-width:1200px){
+
+    .recipes-wrapper .card1{
+      
+        width: 31%;
+        
+        
+    }
+  
+
+
+    .image2{
+        height: 290px;
+        border-radius: 12px;
+      
+    }
+
+}
+
+@media (max-width:799px){
+
+    nav #bar{
+       display: block;
+       position: absolute;
+       top:5%;
+       right: 5%;
+       font-size: 30px;
+       color: white;
+     
+    }
+    nav{
+        background-image: radial-gradient(#92b0cf,#708090,#2F4F4F);
+        height: 12vh;
+    }
+    .nav{
+    position: relative;
+    width: 100%;
+    height:0vh;
+    background-color:#5e7994;
+    top:100%;
+    left: 0px;
+    text-align: center;
+    transition: all 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    }
+   
+  
+    
+    .nav li a{
+        font-size: 20px;
+        padding: 20px 20px;
+      
+        
+    }
+    .nav li a:hover ,   .nav li a.active{
+        background-color: #c2d7ee;
+        color: #2F4F4F;
+    }
+
+    ul.show{
+        height: 45vh;
+     
+      
+    }
+    .hero-wrapper{
+       
+       flex-direction: column-reverse;
+       justify-content: space-between;
+       gap:30px;
+    }
+    .detail{
+        width: 100%;
+    }
+    .image1{
+        width: 100%;
+    }
+
+    .about-wrapper{
+      
+     flex-direction: column;
+       justify-content: space-between;
+    }
+    .recipes-wrapper{
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+
+    .recipes-wrapper .card1{
+       
+        width: 100%;
+        
+        
+    }
+    .image2{
+        height: 240px;
+        
+    }
+    .det1{
+        text-align: justify;
+    }
+    .det1 h3{
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .info-card{
+     width: 100%;
+     margin-bottom: 20%;
+    
+    }
+    .info-card .dv1 h1{
+        font-size: 25px;
+       
+    }
+    .info-card .dv1 p{
+        font-weight: 200;
+        font-family: 'Poppins', sans-serif;
+        color: #708090;
+        font-size: 10px;
+    }
+
+    
+}
+
+@media (max-width:477px){
+    .info-card{
+        width: 100%;
+        margin-bottom: 30%;
+       
+       }
+       .info-card .dv1 h1{
+           font-size: 20px;
+          
+       }
+       .info-card .dv1 p{
+           font-weight: 400;
+          
+           font-size: 5px;
+       }
+   
+
+}
