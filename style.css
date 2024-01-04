@@ -10,7 +10,6 @@
 
 nav{
     background-image: radial-gradient(#92b0cf,#708090,#2F4F4F);
-   
 }
 .nav{
     display: flex;
@@ -124,7 +123,8 @@ nav{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+ 
    
    
 }
@@ -147,7 +147,8 @@ nav{
     text-align: center;
 }
 .image2{
-    height: 300px;
+  
+    width: 100%;
     border-radius: 12px;
   
 }
@@ -191,25 +192,25 @@ nav{
    color: white;
 }
 
-
 @media (max-width:1200px){
 
     .recipes-wrapper .card1{
-      
-        width: 31%;
-        
-        
+        padding: 2% 2% !important;
     }
-  
-
-
-    .image2{
-        height: 290px;
-        border-radius: 12px;
-      
+    .det1{
+        margin-top: 5%;   
+        padding-bottom: 3%;
     }
-
+    .det1 h3{
+        font-size: 17px;
+    }
+    .det1 p{
+        font-size: 13px;
+    }
+    
 }
+
+
 
 @media (max-width:799px){
 
@@ -294,6 +295,7 @@ nav{
     }
     .image2{
         height: 240px;
+        width: 100%;
         
     }
     .det1{
